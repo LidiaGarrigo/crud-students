@@ -1,0 +1,4 @@
+<div class="center">
+  <app-new-student></app-new-student>
+  <app-student *ngFor="let student of (students | async)" [student]="student"></app-student>
+</div>
