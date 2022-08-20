@@ -18,7 +18,7 @@ export abstract class ApiServiceService<T> {
   }
 
   addData(params: string, body: T) {
-    return this.http.post(`${environment.apiUrl}${params}`, body).pipe(catchError(this.handleError<T>(`addStudent`))).subscribe((res) => console.log(res));
+    return this.http.post(`${environment.apiUrl}${params}`, body).subscribe((res) => console.log(res));
   }
 
   deleteData(params: string, id: number) {

@@ -8,7 +8,7 @@ import Student from '../models/Student';
 import { ApiServiceService } from './api-service.service';
 
 describe('ApiServiceService', () => {
-  let service: ApiServiceService<Student>;
+  let service: ApiServiceService<Student[]>;
   let httpController: HttpTestingController;
 
   const params: string = 'students/list';
